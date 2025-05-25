@@ -1,0 +1,14 @@
+.todoList{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todoList li.completed{
+  text-decoration: line-through;
+}
+
+.todoList li .todo-actions{
+  display: none;
+}
+.todoList li:hover .todo-actions{
+  display: block;
+}
