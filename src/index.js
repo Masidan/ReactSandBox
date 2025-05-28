@@ -14,7 +14,12 @@ import Netflix from './Netflix/Netflix';
 import UseEffectComponent from './UseEffectComponent/UseEffectComponent';
 import UseEffectComponent2 from './UseEffectComponent/UseEffectComponent2';
 import UseEffectComponent3 from './UseEffectComponent/UseEffectComponent3';
-import UseEffectAPI from './UseEffectComponent/Api';
+import ApiQuote from './ApiComponents/Quote';
+import ApiISS from './ApiComponents/ISS';
+import MultipleReturns from './ApiComponents/MultipleReturns';
+import ShowHide from './Components/ShowHide';
+import ChooseFilms from './ChooseFilms/ChooseFilms';
+import SliderFilms from './SliderFilms/SliderFilms';
 
 import Foot from './Foot/Foot';
 //import reportWebVitals from './reportWebVitals';
@@ -82,10 +87,45 @@ useEffect3.render(
   </React.StrictMode>
 );
 
-const useEffectAPI = ReactDOM.createRoot(document.getElementById('useEffectAPI'));
-useEffectAPI.render(
+const apiQuate = ReactDOM.createRoot(document.getElementById('ApiQuote'));
+apiQuate.render(
   <React.StrictMode>
-    <UseEffectAPI />
+    <ApiQuote />
+  </React.StrictMode>
+);
+
+const apiISS = ReactDOM.createRoot(document.getElementById('ApiISS'));
+apiISS.render(
+  <React.StrictMode>
+    <ApiISS />
+  </React.StrictMode>
+);
+
+const multipleReturns = ReactDOM.createRoot(document.getElementById('MultipleReturns'));
+multipleReturns.render(
+  <React.StrictMode>
+    <MultipleReturns />
+  </React.StrictMode>
+);
+
+const showHide = ReactDOM.createRoot(document.getElementById('ShowHide'));
+showHide.render(
+  <React.StrictMode>
+    <ShowHide />
+  </React.StrictMode>
+);
+
+const chooseFilms = ReactDOM.createRoot(document.getElementById('ChooseFilms'));
+chooseFilms.render(
+  <React.StrictMode>
+    <ChooseFilms />
+  </React.StrictMode>
+);
+
+const sliderFilms = ReactDOM.createRoot(document.getElementById('SliderFilms'));
+sliderFilms.render(
+  <React.StrictMode>
+    <SliderFilms />
   </React.StrictMode>
 );
 

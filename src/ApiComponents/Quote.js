@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 
 
-const Api = () => {
+const Quote = () => {
 
     const url = "https://api.kanye.rest/";
     
@@ -31,11 +31,12 @@ const Api = () => {
     return (
         <div className=" border border-1 bg-light p-3 m-2 ">
             <h5 className="text-center">Component: useState, useEffect a API</h5>
-            <span className="text-muted"></span>
-            <a className="d-flex" href="https://www.youtube.com/watch?v=1CN8aK0DrdE&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx&index=65&ab_channel=David%C5%A0etek-Hacknisvoubudoucnost">youtoobe</a>
-            <a className="" href="https://api.kanye.rest/">api.kanye.rest</a>
-            <div>{quote}</div>
+            <span className="text-muted"></span><br/>
+            <a className="" href="https://www.youtube.com/watch?v=1CN8aK0DrdE&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx&index=65&ab_channel=David%C5%A0etek-Hacknisvoubudoucnost">youtoobe</a><br/>
+            <a className="" href={url}>api.kanye.rest</a><br/>
+            <div className="mt-2">{quote}</div>
+            <button className="btn btn-primary mt-2" onClick={getQuote}>Získat nový citát</button>
         </div>
     );
 };
-export default Api;
+export default Quote;
